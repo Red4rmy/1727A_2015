@@ -19,3 +19,27 @@ LN ./bin/auto.o ./bin/autonFunctions.o ./bin/baseFunc.o ./bin/drivePID.o ./bin/d
    text	   data	    bss	    dec	    hex	filename
   35924	      8	   4512	  40444	   9dfc	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:54:17 **** Incremental Build of configuration Default for project ABB_style_recording ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src autonFunctions.c
+CC -I../include -I../src baseFunc.c
+CC -I../include -I../src drivePID.c
+CC -I../include -I../src driveRoutines.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opControlTypes.c
+opControlTypes.c: In function 'digitalDrive':
+opControlTypes.c:133:6: warning: unused variable 'all' [-Wunused-variable]
+CC -I../include -I../src opconFunc.c
+CC -I../include -I../src opcontrol.c
+CC -I../include -I../src point.c
+CC -I../include -I../src select.c
+CC -I../include -I../src songs.c
+CC -I../include -I../src taskFunc.c
+LN ./bin/auto.o ./bin/autonFunctions.o ./bin/baseFunc.o ./bin/drivePID.o ./bin/driveRoutines.o ./bin/init.o ./bin/opControlTypes.o ./bin/opconFunc.o ./bin/opcontrol.o ./bin/point.o ./bin/select.o ./bin/songs.o ./bin/taskFunc.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  35924	      8	   4512	  40444	   9dfc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+18:01:36 **** Incremental Build of configuration Default for project ABB_style_recording ****
+make all 
+make[1]: Nothing to be done for `all'.
