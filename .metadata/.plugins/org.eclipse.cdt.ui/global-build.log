@@ -1,0 +1,21 @@
+16:36:53 **** Build of configuration Default for project ABB_style_recording ****
+make all 
+CC -I../include -I../src taskFunc.c
+taskFunc.c:30:5: error: invalid suffix "_channel_1" on integer constant
+taskFunc.c:30:5: error: expected identifier or '(' before numeric constant
+make[1]: *** [../bin/taskFunc.o] Error 1
+make: *** [src] Error 2
+16:37:08 **** Incremental Build of configuration Default for project ABB_style_recording ****
+make all 
+CC -I../include -I../src taskFunc.c
+LN ./bin/auto.o ./bin/autonFunctions.o ./bin/baseFunc.o ./bin/drivePID.o ./bin/driveRoutines.o ./bin/init.o ./bin/opControlTypes.o ./bin/opconFunc.o ./bin/opcontrol.o ./bin/point.o ./bin/select.o ./bin/songs.o ./bin/taskFunc.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  35924	      8	   4448	  40380	   9dbc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:06:11 **** Incremental Build of configuration Default for project ABB_style_recording ****
+make all 
+CC -I../include -I../src taskFunc.c
+LN ./bin/auto.o ./bin/autonFunctions.o ./bin/baseFunc.o ./bin/drivePID.o ./bin/driveRoutines.o ./bin/init.o ./bin/opControlTypes.o ./bin/opconFunc.o ./bin/opcontrol.o ./bin/point.o ./bin/select.o ./bin/songs.o ./bin/taskFunc.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  35924	      8	   4512	  40444	   9dfc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
