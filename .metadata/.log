@@ -1,0 +1,10 @@
+!SESSION 2015-01-28 16:21:52.155 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  --product org.eclipse.platform.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 --product org.eclipse.platform.ide
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-01-28 16:26:27.454
+!MESSAGE Indexed 'ABB_style_recording' (13 sources, 21 headers) in 1.15 sec: 1,103 declarations; 2,387 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
