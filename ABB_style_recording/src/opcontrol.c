@@ -58,13 +58,15 @@ void operatorControl() {
 
 	sensor = taskRunLoop(getSensors, 20);
 	//debug = taskRunLoop(*sensorDebug, 20);
-	taskCreate(getJoystickValues,TASK_DEFAULT_STACK_SIZE,NULL,TASK_PRIORITY_DEFAULT);
+	//taskCreate(getJoystickValues,TASK_DEFAULT_STACK_SIZE,NULL,TASK_PRIORITY_DEFAULT);
+	taskRunLoop(getJoystickValues, 20);
+
 
 	switch(driveProgram)
 	{
 	case GAME:
-		gameRoutine();
 		taskRunLoop(songTask,20);
+		gameRoutine();
 		break;
 	case R_RED_0:
 		recordRed_0();
