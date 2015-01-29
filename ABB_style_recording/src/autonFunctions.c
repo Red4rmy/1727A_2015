@@ -72,13 +72,13 @@ void rotSet(bool state)
  */
 void armSet(int target)
 {
-	while(SKYdist>(target+20)||SKYdist<(target-20))
+	while(ARMpos>(target+20)||ARMpos<(target-20))
 	{
-		if(SKYdist>(target+20))
+		if(ARMpos>(target+20))
 		{
 			armDown(127);
 		}
-		else if(SKYdist<(target-20))
+		else if(ARMpos<(target-20))
 		{
 			armUp(127);
 		}

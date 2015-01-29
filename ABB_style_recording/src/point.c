@@ -119,11 +119,11 @@ point recordPoint()
 {
 
 	int func;
-	while(joystickGetDigital(2,8,JOY_UP) == 0)
+	while(joy2_channel8 == 0)
 	{
 
 		digitalDrive();
-		if(joystickGetDigital(2,5,JOY_UP) == 1)
+		if(joy1_channel7 == 1)
 		{
 			skyFind();
 			func = 0;

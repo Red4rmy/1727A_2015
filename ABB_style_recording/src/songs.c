@@ -9,63 +9,63 @@
 void songTask()
 {
 
-	if(joystickGetDigital(2,7,JOY_UP))
+	if(joy2_channel7 == 1)
 	{
 		//SMB2 win
 		speakerPlayRtttl("Win:d=4,o=5,b=140:f,f,16d,16p,f,16d,16p,8f,8d,16c,16p,2f,8d,8c6,8d6,8c6,8d6,8c.6,16c,16a#,16a,8g,2f,p,16f6,2p");
 	}
-	else if(joystickGetDigital(2,7,JOY_RIGHT))
+	else if(joy2_channel7 == 2)
 	{
 		//mario GAME OVER
 		speakerPlayRtttl("MGO:d=4,o=5,b=63:16c6,8p,16g,8p,16e,16p,16a.,16b.,16a.,16g#.,8a#,g#,32g.,32d.,2e,2p");
 	}
-	else if(joystickGetDigital(2,7,JOY_DOWN))
+	else if(joy2_channel7 == 3)
 	{
 		//SMB2 life loss
 		speakerPlayRtttl("Fail:d=4,o=5,b=125:16d#6,16e6,16d#6,16e6,16c6,16g,16g#,16a,16d#6,16e6,16c6,16g,16g#,16a,16d#,16e,8c,2p");
 	}
-	else if(joystickGetDigital(2,7,JOY_LEFT))
+	else if(joy2_channel7 == 4)
 	{
 		//level up
 		speakerPlayRtttl("LU:d=4,o=5,b=140:16e,16e,16e,8b,2p");
 	}
-	else if(joystickGetDigital(2,8,JOY_UP))
+	else if(joy2_channel7 == 5)
 	{
 		//1812 overture
 		speakerPlayRtttl("1812:d=4,o=5,b=200:8c,16g,16g,8c6,8d6,8e6,8d6,8c6,8d6,8e6,8p,8c6,8p,c.6,8g,8c,16g,16g,8c,8d,8e,8d,8c,8d,8e,8p,8c,8p,2c,8p,16a,16a,8d6,8e6,8d6,8a,8f,8a,8d6,8a,8f,8a,d.6,8g,8c,16g,16g,8c6,8d6,8c6,8g,8e,8g,8c6,8g,8e,8g,c.6,8p,1g,2a,2a,2g.,e,1c,1c6,2b,2a,1g,2a.,p,1f,2g,2g,2e.,e,f,f#,g,a,1g,1g6,8c6,16g,16g,8c6,8d6,8e6,8d6,8c6,8d6,8c6,16g,16g,8c6,8d6,8c6,8g,8e,8g,1c.6,2p");
 	}
-	else if(joystickGetDigital(2,8,JOY_RIGHT))
+	else if(joy2_channel7 == 6)
 	{
 		//EVOLVE
 		speakerPlayRtttl("Evolve:d=4,o=5,b=500:8c,8d,8e,8f,8g,8g#,2a.,2f.,1c.,a#,a#,a#,g,g,a#,1a.,f6,1p,1p");
 	}
-	else if(joystickGetDigital(2,8,JOY_DOWN))
+	else if(joy2_channel7 == 7)
 	{
 		//jeapordy
 		speakerPlayRtttl("Jeapordy:d=4,o=5,b=50:8g,8c6,8g,8c,8g,8c6,8g.,16p,8g,8c6,8g,8c6,16e6,8p,16d6,16c6,16b,16a,16g#,8g,8c6,8g,16e,16f,8g,8c6,8g,8p,16c6,16p,16p,16a,16g,16p,16f,16p,16e,16p,16d,16p,16c,2p");
 	}
-	else if(joystickGetDigital(2,8,JOY_LEFT))
+	else if(joy2_channel7 == 8)
 	{
 		//Meta knights revenge
 		speakerPlayRtttl("Meta:d=4,o=5,b=160:8e,8e,8g,8g,a,16c6,16g,16a,8d#6,16p,8d6,16c6,16a,8g,16a,8c6,8c6,16a,8d6,e6,d6,16a,8c6,8c6,16c6,8d6,8e6,8g6,16e6,16d6,8c6,16g,16g#,16p,16a,16p,16d#,2d,8p,a,16c6,16g,16a,16d#6,8p,8d6,16c6,16a,8g,16a,8c6,8c6,16a,8d6,e6,d6,8a,8d6,16d#6,16e6,16p,16d6,16p,16c6,16p,16a,16p,16g,16e,16d#,2d.,p,b,b,8f#.,8g.,8a,e,g,d6,a,b,b,8f#.,8g.,8a,2e6,2a,8d#.,8a.,8d#,8d.,8g#.,8d,8g.,8f.,8c,8d#.,8g.,8c6,16d#,16f,g.,p,g#,16a#,16f,16f,16f,16f,16p,16f,16f,16f,16f,16f,16p,p,8a6,16a,16p,16g,16a,16p,16a,16p,16a,16p,16g,16a,16c6,16d6,16d#6,8p,16d6,16p,16a,16g,16p,16d#6,16p,16d6,16p,16c6,16a,16g,16a,16g,8a,16a6,16p,16g6,16a6,16d#6,16d6,16c6,16d6,16p,16e6,16p,16a,16g,16g#,16a,16f#,16p,16e,16p,16d,8c,16e,16a,16b,8c6,16d#,16g,16a,8a#,16a#,16p,16g#,16a#,16p,16a#,16p,16a#,16p,16g#,16a#,16c#6,16d#6,16e6,8p,16d#6,16p,16a#,16g#,16p,16e6,16p,16d#6,16p,16c#6,16a#,16g#,16a#,16g#,8a#,16a#,16p,16g#,16a#,16f6,16d#6,16c#6,16d#6,16p,16f6,16p,16a#,16g#,16a,16a#,16g,16p,16f,16p,16d#,8c#,16a#,16c#6,16d#6,8e6,16f,16g,16a#,8a6,16a,16p,16g,16a,16p,16a,16p,16a,16p,16g,16a,16c6,16d6,16d#6,8p,16d6,16p,16a,8g,16d#6,16p,16d6,16p,16c6,16a,16g,16a,16c6,8a,16a6,16p,16g6,16a6,16d#6,16d6,16c6,16d6,16p,16e6,16p,16a,16g,16g#,16a,16f#,16p,16e,16p,16d,8c,16e,16a,16b,8c6,16d#,16g,16a,16a#,16f,16a#,16p,16g#,16a#,16p,16a#,16p,16a#,16p,16g#,16a#,16c#6,16d#6,16e6,8p,16d#6,16p,16a#,8g#,16e6,16p,16d#6,16p,16c#6,16a#,16g#,16c6,16c#6,16c#,16f,16a#,16p,16g#,16a#,16f6,16d#6,16c#6,16d#6,16p,16f6,16p,16a#,16g#,16a,16a#,16g,16p,16f,16p,16d#,8c#,16a#,16c#6,16d#6,8e6,16f,16g,16a#,c,c6,8g.,8g#.,8a#,f,g#,d#6,a#,c,c6,8g.,8g#.,8a#,2f6,a#,p,8e.,8a#.,8e,8d#.,8a.,8d#,8g#.,8f#.,8c#,8e.,8g#.,8c#6,16e,16f#,g#.,p,a,16b,16f#,16f#,16f#,16p,16f#,8f#,8e6,8e6,8g6,8g6,16a6,8p,2a.,8p,8a.,2a,8p,16p,16a#,16b,8c.6,2c6,8p,16p,16d6,16d#6,8e.6,2e6,8p,16p,16g6,16p,8a6,16a,16p,16c6,16p,16a,16d#6,8p,16d6,16p,16c6,16a,16g,16p,16a,16c6,16p,16c6,16p,16a,16d6,16p,2p,16c,16d#,16p,16d#,16p,16d#,16f,16p,16g,16p,16a#,16p,16g,16f,16d#,16p,16d,16e,16p,16g#,16p,16a,2b,p,8e6,16c6,16d6,16p,16e6,8p,16a,16p,8c6,16a,16p,8p,16e6,16p,16c6,16d6,16p,16e6,8p,16d#6,16p,16d6,16c6,16a,16p,8p,16g,16p,16c6,16d#6,16p,16g6,8p,16c6,16p,8d#6,16c6,16p,8p,16g6,16p,16d#6,16f6,16p,16g6,8p,8g.6,8g.6,16a6,16p,16e6,16p,16c6,16d6,16p,16e6,8p,16a,16p,8c6,16a,16p,8p,16e6,16p,16c6,16d6,16p,16e6,8p,8d#6,16d6,16c6,16a,16p,8p,8g,16c6,16d#6,16p,16g6,8p,16c6,16p,8d#6,16c6,16p,8p,16d#6,16p,16f6,8g6,8f6,16d#6,16g6,16f6,16d#6,16d6,16c6,16p,8p,16c6,16p,16c6,16d6,16p,8d#.6,16c6,16p,16a#,16c6,p,8g,16c6,16d#6,16p,8g.6,16d#6,16p,16d6,16d#6,p,16g#,16p,16b,16d#6,16p,8b.,16g#,16p,16f#,16g#,p,16g#,16p,16b,16d#6,16p,8f#.6,8d#6,16c#6,16d#6,16c#6,16b,16a#,g#,16p,16f#,16g#,8a#.,8d#.6,8a#,8c.6,8f.,8c,8e.,8f.,8g,8f.,8d.,8f,8g#.,8a.,8b,c.6,16b,16c6,8d.6,8b.,8d6,8c.6,16b,2a.,c.6,16b,16c6,8d.6,8b.,8d6,2d#.6,p,c.6,16a#,16g#,8g,8f,8d#,8f,g,8f.,16g,c,8c.,16c,2d.,8d.,16d#,2d.,16c.,16d#.,16g,c.6,16a#,16g#,8g,8f,8d#,8f,g,8f.,16g,c,c,2d.,d,2d.,8d.,16d#,d.,8d#,d.,8d#,16d,16d#,16d,16d#,16d,16d#,16d,16d#,8e,8e,8g,8g,a,16c6,16g,16a,8d#6,16p,8d6,16c6,16a,8g,16a,8c6,8c6,16a,8d6,e6,d6,16a,8c6,8c6,16c6,8d6,8e6,8g6,16e6,16d6,8c6,16g,16g#,16p,16a,16p,16d#,2d,8p,a,16c6,16g,16a,16d#6,8p,8d6,16c6,16a,8g,16a,8c6,8c6,16a,8d6,e6,d6,8a,8d6,16d#6,16e6,16p,16d6,16p,16c6,16p,16a,16p,16g,16e,16d#,2d.,p,b,b,8f#.,8g.,8a,e,g,d6,a,b,b,8f#.,8g.,8a,2e6,2a,8d#.,8a.,8d#,8d.,8g#.,8d,8g.,8f.,8c,8d#.,8g.,8c6,16d#,16f,2g,8p,g#,16a#,16f,16f,16f,16f,16p,16f,16f,8e,8e,8g,8g,16a,8p,16a,16p,16a,16g,16g#,8a,2p");
 	}
-	else if(joystickGetDigital(2,5,JOY_UP))
+	else if(joy2_channel7 == 9)
 	{
 		//Dr.Wily's theme
 		speakerPlayRtttl("Wily:d=4,o=5,b=180:8c,16d#,16d#,8d#,16d#,16d#,8d#,8c,8p,16c,16c,8d#,16d#,16d#,8d#,8c,8p,8g,8f,8g,8p,16d#,16d#,8d#,16d#,16d#,8d#,8c,8p,8g,8p,8f,8p,8d#,8p,8f,p,8p,16f,16f,8f,16f,16f,8f,8d,8p,8g,8p,8f,8p,8d#,8p,8d,8p,8c,8c,8c,8g,8a#,a.,8c,8c,8c,8g,8a#,a,8a#,8c6,8p,16d#,16d#,8d#,16d#,16d#,8d#,8c,8p,16c,16c,8d#,16d#,16d#,8d#,8c,8p,8g,8f,8g,8p,16d#,16d#,8d#,16d#,16d#,8d#,8c,8p,8g,8p,8f,8p,8d#,8p,8f,p, 8p,16f,16f,8f,16f,16f,8f,8d,8p,8g,8p,8f,8p,8d#,8p,8d,8p,8c,8c,8c,8g,8a#,a.,8c,8c,8c,8g,8a#,a,8a#,2c.6,8p,8a#,d#6,c6,a#,c.6,2a#,8a#,c.6,8g,8g#,8g,8g#,8g,8d#,8g,8a#,2c.6,8a#,d#6,c6,a#,c.6,2a#,8a#,8g,8a#,b,8b,8b,8d6,g6,p,2g.,8f,a#,g#,g,g#,2g.,8p,8f,a#,g#,g,g#,d#.,p,8d#,8f,8g,1d,8c,8c,8c,8g,8a#,a.,8c,8c,8c,8g,8a#,a, 8a#,2c6,8p,c6,8a#,c6,d#.6,8g6,8f6,8d#6,8d6,2c6,c6,8a#,c6,d#.6,8d#6,8f6,d#6,2d6,8d6,8c6,8a#,g.6,f6,d#6,d6,8d6,8d#6,8d6,2c6,8c,8c,8c,8g,8a#,a.,8a#,2c.6,8a#,d#6,c6,a#,c.6,2a#,8a#,c.6,8g,8g#,8g,8d#,8c,8d#,8g,8a#,2c.6,8a#,d#6,c6,a#,c.6,2a#,8a#,8g,8a#,b,8b,8b,8d6,g6,8p,8d#,8p,8d#,8d#,8d,d#,8c6,a#,g#,g,f,8f,8p,8g,8g,8p,8g,p,8f,8p,8g,8g,8p,8g,8p,8f,8d#,8p,8d#,8d#,8d,d#,8c6,a#,g#,g,f,8p,8d,8d#,8d,1c.,p,16d#,16d#,8d#,16d#,16d#,8d#,8c,8p,16c,16c,8d#,16d#,16d#,8d#,8c,8p,8g,8f,8g,8p,16d#,16d#,8d#,16d#,16d#,8d#,8c,8p,8g,8p,8f,8p,8d#,8p,8f,p,8p,16f,16f,8f,16f,16f,8f,8d,8p,8g,8p,8f,8p,8d#,8p,8d,8p,8c,8c,8c,8g,8a#,a.,8c,8c,8c,8g,8a#,a,8a#,8c6,2p");
 	}
-	else if(joystickGetDigital(2,5,JOY_DOWN))
+	else if(joy2_channel7 == 10)
 	{
 		//DeDeDe's theme
 		speakerPlayRtttl("DDD:d=4,o=5,b=180:16d#,16e,16f,16f#,16g,16g#,16a,16a#,16b,16c6,16c#6,16d6,16d#6,16e6,16f6,16f#6,8a#6,g6,8a#6,g6,8a#6,g6,8p,p,2p,d#6,c6,8p,8a#,8c6,d#6,c.6,8p,8f6,g6,16d#6,16d6,c6,p,8g,8d#6,c6,8a#,c6,8a#,c6,8a#,8f6,d#.6,8p,8f6,d#6,8c6,d#6,8c6,8d#6,8f6,8f#6,8g6,8a#6,g6,2p,8a#6,8g6,2p,8a#6,g.6,d#6,c6,8p,8a#,8c6,d#6,c.6,8p,8f6,g6,16d#6,16d6,c6,p,8g,8d#6,c6,8a#,c6,8a#,c6,8a#,8f6,d#.6,8p,8f6,d#6,8c6,d#6,8c6,8d#6,8f6,8f#6,8g6,8a#,g.,p,8a#,g.,p,8a#,g,16p,16a#,8c6,8c6,8c6,8d6,8d#6,8d#6,8d6,8c6,8a#,c6,g.,p,8c6,8c6,8c6,8d6,8d#6,8d#6,8f6,8d#6,8f6,g6,2g6,16d#6,16d6,8c6,8c6,8c6,8d6,8d#6,8d#6,8d6,8c6,8a#,c6,2g,16g,16a#,8c6,8c6,8c6,8d6,8c6,8c6,8a#,8g,8f,g,2c,8p,d.6,16c6,16d6,8a#.,8a.,8f,8d#.,16f,2g,8p,16c6,16c#6,d.6,16c6,16d6,8a#.,8a.,8f,2c6,8p,8e.,8g.,c.6,16a#,16g#,8g.,8f.,8g,a#.,16g#,16g,8f.,8d#,8f.,8d.,16g,2g.,b.,g,b.,8d#6,8c6,8p,c6,g6,16d#6,16d6,8c6,8c6,8a#,8c6,2p");
 	}
-	else if(joystickGetDigital(2,6,JOY_UP))
+	else if(joy2_channel7 == 11)
 	{
 		//DK 25m theme
 		speakerPlayRtttl("DK1:d=4,o=5,b=200:8a#,p,8d6,8p,8f6,8g6,8f6,8a#,p,8d6,8p,8f6,8g6,8f6,8a#,p,8d6,8p,8f6,8g6,8f6,8a#,p,8d6,8p,8f6,8g6,8f6,8a#,p,8d6,8p,8f6,8g6,8f6,8a#,p,8d6,8p,8f6,8g6,8f6");
 		speakerPlayRtttl("DKe:d=4,o=5,b=200:8a#,p,8d6,8p,8f5,8g6,8f6,8a#");
 	}
-	else if(joystickGetDigital(2,6,JOY_DOWN))
+	else if(joy2_channel7 == 12)
 	{
 		//
 		speakerPlayRtttl("Gerudo:d=4,o=5,b=125:16c,16g,16a#,8c#6,8f,8g#,16e,16g,16a#,c6,16c,16c,16c,8c,8c,16c,16c,16c,16c,8c,8p,16p,16f,16f,16c,16f,16p,16f,16p,16c,16f,16f,16c,16f,16p,16f,16p,16c,16f,16f,16c#,16f,16p,16f,16p,16c#,16f,16c#,16d#,16f,16p,16f,16p,16g#,16g,16d#,16d#,16g,16p,16a#,16p,16g#,16g,16d#,16d#,16g,p,16f,16f,16c,16f,16p,16c,16f,2e,16p,16f,16p,16c,16f,16p,16c,16f,16g,g#,d#,8c#,16f,16p,16f,16p,16c#,16f,16p,16c#,8f,16c#,16f,16c#,16f,16d#,16d#,16g,16p,16a#,16p,16g#,16g,16d#,16d#,16g,p,8g#,8f,8g#.,8g#,16g#,16g#,16g#,2g,16p,16c,16f,16g,8g#.,16c,16f,16g,g#,8p,16c#,16f,16g,8g#.,16c#,16f,16p,16g,g#,8p,16a#,16d#,16f,8g.,16a#,16d#,16f,g.,16p,16f,16g,16f,e,16e,16e,16e,16e,32e,32e,32e,32e,32e,32e,32e,32e,16p,16c,16f,16g,8g#.,16c,16f,16g,g#.,16p,16c#,16f,16g,8g#.,16c#,16f,16c#,16g,c6,8p,16a#,16d#,16f,8g.,16a#,16d#,16f,a#.,16p,16g#,16a#,16g#,g,16g,16g,16g,16g,32g,32g,32g,32g,32g,32g,32g,32g,8p,16a#,8c6,16g6,8g#6,32g6,32g#6,8g6,8f.6,8c6,d#6,16d#6,16f6,16d#6,2c#6,16p,8p,16g#,8a#,8g.6,8f.6,8d#.6,8c#6,c6,16c#6,16d#6,16c#6,2c6,16p,8p,16a#,8c6,16g6,8g#6,32g6,32g#6,8g6,8f.6,8c6,d#6,16d#6,16f6,16d#6,c#.6,16p,8a#,a#.,16d#6,16f6,d#.6,8c#6,c.6,16c6,16c6,2c6,8p,16f,16g,16g#,16c6,8p,16f,16g,16g#,8c.6,p,16f,16g,16g#,16c#6,8p,16f,16g,16g#,8c#.6,8p,a#.,16f6,16g6,f.6,8a#,2c6,2e,8f,16g#,8g.,8g#,8f,16g#,8g.,8g#,8c#,16g#,16f,8g,8g#,8c#,16g#,16f,8g,8g#,8d#,16a#,8a.,8a#,8d#,16a#,8a.,8a#,8p,16c#6,16d#6,16c#6,8c.6,2p,16f,16f,16c,16f,16p,16f,16p,16c,16f,16f,16c,16f,16p,16f,16p,16c,16f,16f,16c#,16f,16p,16f,16p,16c#,16f,16c#,16d#,16f,16p,16f,16p,16g#,16g,16d#,16d#,16g,16p,16a#,16p,16g#,16g,16d#,16d#,16g,p,16f,16f,16c,16f,16p,16c,16f,2e,p,16p,16c,16f,16g,32g#,32a#,8g#.,8g,8f,p,16p,16c#,16f,16g,32g#,32a#,8g#.,8g,8f,p,16p,16a#,16d#,16f,8g,8g#,8a#,c.6,32c6,32c#6,16c6,16a#,16g#,16g,16e,16f,16g,16g#,16a#,16c6,16c#6,16p,16c,16f,16g,8g#,16c,16f,16g,16g#,16a#,16c6,32f6,32g6,16f6,16a#,16g#,16p,16c#,16f,16g,8g#,16c#,16f,32g,32g#,16g,16a#,16c6,16f6,16c6,16a#,16g#,16p,16a#,16d#,16f,32g,32g#,16g,16a#,16d#,16f,16g,16g#,16a#,16c6,16a#,16g#,16g,16g#,16c,16d,16e,32f,32g,16f,16a#,16g#,16g,16e,16f,16g,16g#,16a#,16c6,16c#6,16p,16c,16f,16g,8g#.,16c,16f,16g,g#.,16p,16c#,16f,16g,8g#.,16c#,16f,16p,16g,g#,8p,16a#,16d#,16f,8g.,16a#,16d#,16f,g.,16p,16f,16g,16f,e,16e,16e,16e,16e,32e,32e,32e,32e,32e,32e,32e,32e,16p,16c,16f,16g,8g#.,16c,16f,16g,g#.,16p,16c#,16f,16g,8g#.,16c#,16f,16c#,16g,c6,8p,16a#,16d#,16f,8g.,16a#,16d#,16f,a#.,16p,16g#,16a#,16g#,g,16g,16g,16g,16g,32g,32g,32g,32g,32g,32g,32g,32g,8p,16f,16g,16g#,16c6,8p,16f,16g,16g#,8c.6,p,16f,16g,16g#,16c#6,8p,16f,16g,16g#,8c#.6,8p,a#.,16f6,16g6,f.6,8a#,2c.6,e,2f.,32g#,32a#,8g.,2g#.,c6,1a#,8p,16c#6,16d#6,16c#6,8c.6,16c6,16c6,16c6,32g,32c6,32g,32e,32g,32c6,32g,32e,32g,16c6,1f6");

@@ -231,6 +231,49 @@ extern int ARMpos;
 extern int SKYdist;
 extern int frontAngle;
 
+
+/*
+ * Live updated joystick values
+ * Digital Ports 5 and 6:
+ *  0: none
+ *  1: up
+ *  2: down
+ *  3: both
+ * Digital Ports 7 and 8:
+ * 	0: none
+ * 	1:  up
+ * 	2:  down
+ * 	3:  up+down
+ * 	4:  right
+ * 	5:  right+up
+ * 	6:  right+down
+ * 	7:  right+up+down
+ * 	8:  left
+ * 	9:  left+up
+ * 	10: left+down
+ * 	11: left+up+down
+ * 	12: left+right
+ * 	13: left+right+up
+ * 	14: left+right+down
+ * 	15: left+right+up+down
+ */
+extern int joy1_channel1;
+extern int joy1_channel2;
+extern int joy1_channel3;
+extern int joy1_channel4;
+extern int joy2_channel1;
+extern int joy2_channel2;
+extern int joy2_channel3;
+extern int joy2_channel4;
+extern int joy1_channel5;
+extern int joy1_channel6;
+extern int joy1_channel7;
+extern int joy1_channel8;
+extern int joy2_channel5;
+extern int joy2_channel6;
+extern int joy2_channel7;
+extern int joy2_channel8;
+
 //TaskHandle variables for tasks
 extern TaskHandle debug;
 extern TaskHandle sensor;

@@ -27,6 +27,59 @@ void getSensors()
 	taskDelay(20);
 }
 
+int joy1_channel1;
+int joy1_channel2;
+int joy1_channel3;
+int joy1_channel4;
+int joy2_channel1;
+int joy2_channel2;
+int joy2_channel3;
+int joy2_channel4;
+int joy1_channel5;
+int joy1_channel6;
+int joy1_channel7;
+int joy1_channel8;
+int joy2_channel5;
+int joy2_channel6;
+int joy2_channel7;
+int joy2_channel8;
+void getJoystickValues()
+{
+joy1_channel1 = joystickGetAnalog(1,1);
+joy1_channel2 = joystickGetAnalog(1,2);
+joy1_channel3 = joystickGetAnalog(1,3);
+joy1_channel4 = joystickGetAnalog(1,4);
+joy2_channel1 = joystickGetAnalog(2,1);
+joy2_channel2 = joystickGetAnalog(2,2);
+joy2_channel3 = joystickGetAnalog(2,3);
+joy2_channel4 = joystickGetAnalog(2,4);
+
+
+joy1_channel5 = joystickGetDigital(1,5,JOY_UP)+(2*joystickGetDigital(1,5,JOY_DOWN));
+
+joy1_channel6 = joystickGetDigital(1,6,JOY_UP)+(2*joystickGetDigital(1,6,JOY_DOWN));
+
+joy1_channel7 = joystickGetDigital(1,7,JOY_UP)+(2*joystickGetDigital(1,7,JOY_DOWN))
+		+(4*joystickGetDigital(1,7,JOY_RIGHT))+(8*joystickGetDigital(1,7,JOY_LEFT));
+
+joy1_channel8 = joystickGetDigital(1,8,JOY_UP)+(2*joystickGetDigital(1,8,JOY_DOWN))
+		+(4*joystickGetDigital(1,8,JOY_RIGHT))+(8*joystickGetDigital(1,8,JOY_LEFT));
+
+joy2_channel5 = joystickGetDigital(2,5,JOY_UP)+(2*joystickGetDigital(2,5,JOY_DOWN));
+
+joy2_channel6 = joystickGetDigital(2,6,JOY_UP)+(2*joystickGetDigital(2,6,JOY_DOWN));
+
+joy2_channel7 = joystickGetDigital(2,7,JOY_UP)+(2*joystickGetDigital(2,7,JOY_DOWN))
+		+(4*joystickGetDigital(2,7,JOY_RIGHT))+(8*joystickGetDigital(2,7,JOY_LEFT));
+
+joy2_channel8 = joystickGetDigital(2,8,JOY_UP)+(2*joystickGetDigital(2,8,JOY_DOWN))
+		+(4*joystickGetDigital(2,8,JOY_RIGHT))+(8*joystickGetDigital(2,8,JOY_LEFT));
+}
+
+
+
+
+
 int lcdScreen = 1;
 int lcdScreenMax1 = 5;
 void sensorDebug() {

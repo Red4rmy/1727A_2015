@@ -389,7 +389,7 @@ int pointWriteSelect() {
 	int lcdScreen = 1;
 	int lcdScreenMax1 = 6;
 	while (true) { //Ensures this code will run ONLY when the robot is disabled
-		if (joystickGetDigital(2, 8, JOY_LEFT) == 1) { //Scrolls to the left
+		if (joy2_channel8 == 8) { //Scrolls to the left
 			if (lcdScreenMin == lcdScreen) {
 				lcdScreen = lcdScreenMax1;
 				delay(250);
@@ -398,7 +398,7 @@ int pointWriteSelect() {
 				delay(250);
 			}
 		}
-		if (joystickGetDigital(2, 8, JOY_RIGHT) == 1) { //Scrolls to the right
+		if (joy2_channel8 == 4) { //Scrolls to the right
 			if (lcdScreenMax1 == lcdScreen) {
 				lcdScreen = lcdScreenMin;
 				delay(250);
@@ -411,7 +411,7 @@ int pointWriteSelect() {
 		if (lcdScreen == 1) {
 			lcdPrint(uart1, 1, "point type"); //Name the first point type here
 			lcdPrint(uart1, 2, "turn"); //Name the first point type here
-			if (joystickGetDigital(2, 8, JOY_DOWN) == 1) {
+			if (joy2_channel8 == 2) {
 				lcdPrint(uart1, 1, "Turn Point");
 				lcdPrint(uart1, 2, "Selected!");
 				return lcdScreen;
@@ -420,7 +420,7 @@ int pointWriteSelect() {
 		} else if (lcdScreen == 2) {
 			lcdPrint(uart1, 1, "point type"); //Name the second point type here
 			lcdPrint(uart1, 2, "straight"); //Name the second point type here
-			if (joystickGetDigital(2, 8, JOY_DOWN) == 1) {
+			if (joy2_channel8 == 2) {
 				lcdPrint(uart1, 1, "Straight Point");
 				lcdPrint(uart1, 2, "Selected!");
 				return lcdScreen;
@@ -429,7 +429,7 @@ int pointWriteSelect() {
 		} else if (lcdScreen == 3) {
 			lcdPrint(uart1, 1, "point type"); //Name the third point type here
 			lcdPrint(uart1, 2, "arm"); //Name the third point type here
-			if (joystickGetDigital(2, 8, JOY_DOWN) == 1) {
+			if (joy2_channel8 == 2) {
 				lcdPrint(uart1, 1, "Arm Point");
 				lcdPrint(uart1, 2, "Selected!");
 				return lcdScreen;
@@ -438,7 +438,7 @@ int pointWriteSelect() {
 		} else if (lcdScreen == 4) {
 			lcdPrint(uart1, 1, "point type"); //Name the fourth point type here
 			lcdPrint(uart1, 2, "claw"); //Name the fourth point type here
-			if (joystickGetDigital(2, 8, JOY_DOWN) == 1) {
+			if (joy2_channel8 == 2) {
 				lcdPrint(uart1, 1, "Claw Point");
 				lcdPrint(uart1, 2, "Selected!");
 				return lcdScreen;
@@ -447,7 +447,7 @@ int pointWriteSelect() {
 		} else if (lcdScreen == 5) {
 			lcdPrint(uart1, 1, "point type"); //Name the fifth point type here
 			lcdPrint(uart1, 2, "func"); //Name the fifth point type here
-			if (joystickGetDigital(2, 8, JOY_DOWN) == 1) {
+			if (joy2_channel8 == 2) {
 				lcdPrint(uart1, 1, "Func Point");
 				lcdPrint(uart1, 2, "Selected!");
 				return lcdScreen;
@@ -456,7 +456,7 @@ int pointWriteSelect() {
 		} else if (lcdScreen == 6) {
 			lcdPrint(uart1, 1, "cancel"); //Name the sixth point type here
 			lcdPrint(uart1, 2, "point"); //Name the sixth point type here
-			if (joystickGetDigital(2, 8, JOY_DOWN) == 1) {
+			if (joy2_channel8 == 2) {
 				lcdPrint(uart1, 1, "point");
 				lcdPrint(uart1, 2, "Canceled!");
 				return lcdScreen;

@@ -44,7 +44,7 @@ void recordRed_0()
 		imeReset(imeRF);
 		imeReset(imeLB);
 		imeReset(imeLF);
-		if(joystickGetDigital(1,5,JOY_UP)==1)
+		if(joy1_channel5==3)
 			done=1;
 	}
 	motorStopAll();
@@ -83,7 +83,7 @@ void recordRed_1()
 		imeReset(imeRF);
 		imeReset(imeLB);
 		imeReset(imeLF);
-		if(joystickGetDigital(1,5,JOY_UP)==1)
+		if(joy1_channel5==3)
 			done=1;
 	}
 	motorStopAll();
@@ -118,7 +118,7 @@ void recordBlue_0()
 		imeReset(imeRF);
 		imeReset(imeLB);
 		imeReset(imeLF);
-		if(joystickGetDigital(1,5,JOY_UP)==1)
+		if(joy1_channel5==3)
 			done=1;
 	}
 	motorStopAll();
@@ -153,7 +153,7 @@ void recordBlue_1()
 		imeReset(imeRF);
 		imeReset(imeLB);
 		imeReset(imeLF);
-		if(joystickGetDigital(1,5,JOY_UP)==1)
+		if(joy1_channel5==3)
 			done=1;
 	}
 	motorStopAll();

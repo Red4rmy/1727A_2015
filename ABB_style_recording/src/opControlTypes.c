@@ -22,25 +22,25 @@
 void gameControl()
 {
 
-	motorSet(RF,joystickGetAnalog(1,1)+joystickGetAnalog(1,3)-joystickGetAnalog(1,4));
-	motorSet(RB,-(joystickGetAnalog(1,1)+joystickGetAnalog(1,3)+joystickGetAnalog(1,4)));
-	motorSet(LF,-(joystickGetAnalog(1,1)-joystickGetAnalog(1,3)-joystickGetAnalog(1,4)));
-	motorSet(LB,joystickGetAnalog(1,1)-joystickGetAnalog(1,3)+joystickGetAnalog(1,4));
+	motorSet(RF,joy1_channel1+joy1_channel3-joy1_channel4);
+	motorSet(RB,-(joy1_channel1+joy1_channel3+joy1_channel4));
+	motorSet(LF,-(joy1_channel1-joy1_channel3-joy1_channel4));
+	motorSet(LB,joy1_channel1-joy1_channel3+joy1_channel4);
 
-	if(joystickGetDigital(1,5,JOY_UP))
+	if(joy1_channel5==1)
 		armUp(127);
-	else if(joystickGetDigital(1,5,JOY_DOWN))
+	else if(joy1_channel5==2)
 		armDown(127);
 	else
 		armStop();
-	if(joystickGetDigital(1,6,JOY_UP))
+	if(joy1_channel6==1)
 		clawSet(1);
-	else if(joystickGetDigital(1,6,JOY_DOWN))
+	else if(joy1_channel6==2)
 		clawSet(0);
 
-	if(joystickGetDigital(1,7,JOY_LEFT))
+	if(joy1_channel7==8)
 		rotSet(1);
-	else if(joystickGetDigital(1,7,JOY_RIGHT))
+	else if(joy1_channel7==4)
 		rotSet(0);
 	//printIMEVelocity();
 
@@ -124,38 +124,44 @@ void gameControl()
 void digitalDrive()
 {
 
-	int forward = joystickGetDigital(1, 8, JOY_UP);
+	/*int forward = joystickGetDigital(1, 8, JOY_UP);
 	int backward = joystickGetDigital(1, 8, JOY_DOWN);
 	int turnRight = joystickGetDigital(1, 7, JOY_RIGHT);
 	int turnLeft = joystickGetDigital(1, 7, JOY_LEFT);
 	int strafeRight = joystickGetDigital(1, 8, JOY_RIGHT);
 	int strafeLeft = joystickGetDigital(1, 8, JOY_LEFT);
-	int all = forward + backward + turnRight + turnLeft + strafeRight + strafeLeft;
-	if (forward == 1)
+	int all = forward + backward + turnRight + turnLeft + strafeRight + strafeLeft;*/
+	if (joy1_channel8 == 1)
 		opstraight();
-	else if (backward == 1)
+	else if (joy1_channel8 == 2)
 		opback();
-	else if (turnRight == 1)
+	else if (joy1_channel8 == 4)
 		opturnRight();
-	else if (turnLeft == 1)
+	else if (joy1_channel8 == 8)
 		opturnLeft();
-	else if (strafeRight == 1)
+	else if (joy1_channel7 == 4)
 		opstrafeRight();
-	else if (strafeLeft == 1)
+	else if (joy1_channel7 == 8)
 		opstrafeLeft();
 	else
 		opdriveStop();
 
-	if(joystickGetDigital(1,5,JOY_UP))
+	if(joy1_channel5==1)
 		armUp(127);
-	else if(joystickGetDigital(1,5,JOY_DOWN))
+	else if(joy1_channel5==2)
 		armDown(127);
 	else
 		armStop();
-	if(joystickGetDigital(1,6,JOY_UP))
+
+	if(joy1_channel6==1)
 		clawSet(1);
-	else if(joystickGetDigital(1,6,JOY_DOWN))
+	else if(joy1_channel6==2)
 		clawSet(0);
+
+	if(joy1_channel7==8)
+		rotSet(1);
+	else if(joy1_channel7==4)
+		rotSet(0);
 
 	//printIMEVelocity();
 	delay(20);
