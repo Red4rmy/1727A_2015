@@ -181,6 +181,7 @@ int pointWriteSelect();
 //Looped task functions.
 void getSensors();
 void sensorDebug();
+void getJoystickValues(void *ignore);
 
 //point writing functions.
 point turnPointWrite(int turn);//See declaration

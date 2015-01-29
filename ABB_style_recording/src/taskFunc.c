@@ -43,7 +43,7 @@ int joy2_channel5;
 int joy2_channel6;
 int joy2_channel7;
 int joy2_channel8;
-void getJoystickValues()
+void getJoystickValues(void *ignore)
 {
 joy1_channel1 = joystickGetAnalog(1,1);
 joy1_channel2 = joystickGetAnalog(1,2);

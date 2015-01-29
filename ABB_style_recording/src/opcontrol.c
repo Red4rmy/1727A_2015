@@ -59,6 +59,7 @@ void operatorControl() {
 	sensor = taskRunLoop(getSensors, 20);
 	//debug = taskRunLoop(*sensorDebug, 20);
 	taskRunLoop(songTask,20);
+	taskCreate(getJoystickValues,TASK_DEFAULT_STACK_SIZE,NULL,TASK_PRIORITY_DEFAULT);
 
 	switch(driveProgram)
 	{
