@@ -73,3 +73,6 @@ arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
 19:44:35 **** Incremental Build of configuration Default for project ABB_style_recording ****
 make all 
 make[1]: Nothing to be done for `all'.
+19:52:59 **** Incremental Build of configuration Default for project ABB_style_recording ****
+make all 
+make[1]: Nothing to be done for `all'.

@@ -51,6 +51,7 @@ tmp/
 *.tmp
 *.bak
 *.swp
+*.log
 *~.nib
 local.properties
 .settings/
