@@ -74,3 +74,6 @@ local.properties
 .texlipse
 *./metadata/*
 
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.cdt.core/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/ABB_style_recording/.indexes/e4/history.index
