@@ -74,6 +74,8 @@ joy2_channel7 = joystickGetDigital(2,7,JOY_UP)+(2*joystickGetDigital(2,7,JOY_DOW
 
 joy2_channel8 = joystickGetDigital(2,8,JOY_UP)+(2*joystickGetDigital(2,8,JOY_DOWN))
 		+(4*joystickGetDigital(2,8,JOY_RIGHT))+(8*joystickGetDigital(2,8,JOY_LEFT));
+
+delay(20);
 }
 
 
