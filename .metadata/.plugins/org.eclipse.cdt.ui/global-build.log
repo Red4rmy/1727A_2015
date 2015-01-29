@@ -70,3 +70,6 @@ LN ./bin/auto.o ./bin/autonFunctions.o ./bin/baseFunc.o ./bin/drivePID.o ./bin/d
    text	   data	    bss	    dec	    hex	filename
   35428	      8	   4512	  39948	   9c0c	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+19:44:35 **** Incremental Build of configuration Default for project ABB_style_recording ****
+make all 
+make[1]: Nothing to be done for `all'.

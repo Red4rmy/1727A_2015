@@ -1,14 +1,6 @@
-19:41:19 **** Incremental Build of configuration Default for project ABB_style_recording ****
+19:44:35 **** Incremental Build of configuration Default for project ABB_style_recording ****
 make all 
-CC -I../include -I../src driveRoutines.c
-CC -I../include -I../src opControlTypes.c
-CC -I../include -I../src point.c
-CC -I../include -I../src select.c
-CC -I../include -I../src songs.c
-LN ./bin/auto.o ./bin/autonFunctions.o ./bin/baseFunc.o ./bin/drivePID.o ./bin/driveRoutines.o ./bin/init.o ./bin/opControlTypes.o ./bin/opconFunc.o ./bin/opcontrol.o ./bin/point.o ./bin/select.o ./bin/songs.o ./bin/taskFunc.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
-   text	   data	    bss	    dec	    hex	filename
-  35428	      8	   4512	  39948	   9c0c	./bin/output.elf
-arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+make[1]: Nothing to be done for `all'.
 
-19:41:24 Build Finished (took 5s.526ms)
+19:44:36 Build Finished (took 801ms)
 
