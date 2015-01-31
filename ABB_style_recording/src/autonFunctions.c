@@ -72,13 +72,13 @@ void rotSet(bool state)
  */
 void armSet(int target)
 {
-	while(ARMpos>(target+20)||ARMpos<(target-20))
+	while(ARMpos>(target+5)||ARMpos<(target-5))
 	{
-		if(ARMpos>(target+20))
+		if(ARMpos>(target+5))
 		{
 			armDown(127);
 		}
-		else if(ARMpos<(target-20))
+		else if(ARMpos<(target-5))
 		{
 			armUp(127);
 		}

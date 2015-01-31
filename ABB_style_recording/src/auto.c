@@ -55,9 +55,9 @@ void autonomous() {
 
 	rotSet(0);
 	delay(300);
-	skySection(1);//height 1
-	skySection(2);//height 2
-	skySection(3);//height 3
+	skySection(360);//height 1
+	skySection(360);//height 2
+	skySection(360);//height 3
 
 	/*
 	forward(127);
