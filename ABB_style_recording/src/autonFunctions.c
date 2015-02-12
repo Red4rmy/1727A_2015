@@ -106,13 +106,16 @@ void skyFind()
  */
 void skySection(int height)
 {
-	clawSet(0);//close claw
+	clawSet(1);//close claw
 	armSet(height);
 	rotSet(1);//rotate to skyrise
+	delay(1000);
 	clawSet(0);//release claw
-	delay(100);
+	delay(500);
 	rotSet(0);//rotate to autoloader
 	armSet(0);//replace 0 with rest position
+	delay(500);
+
 }
 
 

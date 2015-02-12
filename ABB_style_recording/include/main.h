@@ -217,7 +217,6 @@ void printIMEVelocity();
 //Sensor variable.
 extern Gyro gyroYaw;// Gyroscopic sensor which is used to measure yaw.
 extern Ultrasonic skyFind1;//Ultrasonic sensor which is used to find the skyrise peice.
-extern Encoder armPos;
 
 //Sensor return variables
 extern int RFcount;
@@ -324,6 +323,9 @@ extern int steps;//# of steps beginning in the *input memory location.
 #define CLAW_PIN 12
 #define ARM_PIN  11
 
+//potentiometer pin
+
+#define ARM_POS 1
 
 //Integer value cooresponding to the function to be executed.
 #define SKYFIND  0

@@ -54,10 +54,11 @@ void autonomous() {
 	sensors = taskRunLoop(*getSensors,20);
 
 	rotSet(0);
-	delay(300);
-	skySection(360);//height 1
-	skySection(360);//height 2
-	skySection(360);//height 3
+	delay(500);
+	rotSet(1);
+	skySection(700);//height 1
+	skySection(700);//height 2
+	skySection(800);//height 3
 
 	/*
 	forward(127);

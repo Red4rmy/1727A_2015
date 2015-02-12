@@ -22,7 +22,7 @@ void getSensors()
 	imeGetVelocity(imeLB, &tLB);LBvel = tLB / 24.5;
 	imeGetVelocity(imeLF, &tLF);LFvel = tLF / 24.5;
 	SKYdist = ultrasonicGet(skyFind1);
-	ARMpos = encoderGet(armPos);
+	ARMpos = abs(analogReadCalibrated(1));
 	frontAngle = gyroGet(gyroYaw);
 	taskDelay(20);
 }

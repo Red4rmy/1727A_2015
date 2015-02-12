@@ -102,9 +102,9 @@ void initialize() {
 	gyroYaw = gyroInit(7, 0);
 
 	speakerInit();
-	armPos = encoderInit(1,2,false);
 
-	skyFind1 = ultrasonicInit(3,4);
+	//skyFind1 = ultrasonicInit(3,4);
+	analogCalibrate(1);
 
 	switch (autonProgram) {
 	case RED_0:
