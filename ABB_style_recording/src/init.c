@@ -88,6 +88,7 @@ double LFvel;
 double LBvel;
 int frontAngle;
 int ARMpos;
+int ARMtop;
 int SKYdist;
 void initialize() {
 	FILE *toRead;
@@ -105,6 +106,7 @@ void initialize() {
 
 	//skyFind1 = ultrasonicInit(3,4);
 	analogCalibrate(1);
+	analogCalibrate(2);
 
 	switch (autonProgram) {
 	case RED_0:

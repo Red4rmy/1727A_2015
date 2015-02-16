@@ -228,6 +228,7 @@ extern double RBvel;
 extern double LFvel;
 extern double LBvel;
 extern int ARMpos;
+extern int ARMtop;
 extern int SKYdist;
 extern int frontAngle;
 

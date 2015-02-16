@@ -80,7 +80,10 @@ void armSet(int target)
 		}
 		else if(ARMpos<(target-5))
 		{
-			armUp(127);
+			if(ARMtop<ARMpos && ARMpos<100/*this must be changed*/)
+				armUp(63);
+			else
+				armUp(127);
 		}
 	}
 	armStop();
