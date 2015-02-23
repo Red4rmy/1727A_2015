@@ -104,7 +104,7 @@ void initialize() {
 
 	speakerInit();
 
-	//skyFind1 = ultrasonicInit(3,4);
+	skyFind1 = ultrasonicInit(3,4);
 	analogCalibrate(1);
 	analogCalibrate(2);
 
